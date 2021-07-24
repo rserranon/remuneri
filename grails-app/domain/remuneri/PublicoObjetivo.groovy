@@ -1,4 +1,7 @@
 package remuneri
+import grails.rest.*
+ 
+@Resource(uri='/publicoobjetivo')
 
 class PublicoObjetivo {
     String  nombre
@@ -9,6 +12,7 @@ class PublicoObjetivo {
     BigDecimal  latitud
     BigDecimal  longitud
     BigDecimal  radio
+    // static belongsTo = [anuncio: Anuncio] used only with scafolfing testing
     static constraints = {
           nombre    size: 5..25, blank: false, unique: true
           edadDe    min: 18, max: 99

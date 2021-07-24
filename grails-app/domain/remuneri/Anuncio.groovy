@@ -1,7 +1,7 @@
 package remuneri
-// import grails.rest.*
+ import grails.rest.*
 
-// @Resource(uri='/anuncios')
+ @Resource(uri='/anuncios')
 
 class Anuncio {
 	String      nombre
