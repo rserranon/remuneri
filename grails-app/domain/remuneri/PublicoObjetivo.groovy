@@ -14,7 +14,7 @@ class PublicoObjetivo {
     BigDecimal  radio
     // static belongsTo = [anuncio: Anuncio] used only with scafolfing testing
     static constraints = {
-          nombre    size: 5..25, blank: false, unique: true
+          nombre    size: 5..35, blank: false, unique: true
           edadDe    min: 18, max: 99
           edadHasta min: 18, max: 99
           nse (inList:["A", "B", "C+", "C"])
